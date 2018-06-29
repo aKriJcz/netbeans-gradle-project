@@ -23,7 +23,7 @@ import org.netbeans.spi.project.ProjectState;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-@org.openide.util.lookup.ServiceProvider(service = ProjectFactory.class)
+@org.openide.util.lookup.ServiceProvider(service = ProjectFactory.class, position = 10)
 public class NbGradleProjectFactory implements ProjectFactory2 {
     private static final Logger LOGGER = Logger.getLogger(NbGradleProjectFactory.class.getName());
 
